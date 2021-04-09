@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Portfolio</title>
+  <!--Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--JS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <script src="static/divscript.js"></script>
+  <!--CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type='text/css' href="static/main.css">
+  
+</head>
+
+<body>
+  <!-- Start Nav bar-->
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand text-danger mx-auto" href="/">Mesud Erkam Cengiz</a>
+  </nav>
+  <!--End Nav Bar-->
+
+  <!--Main Container-->
+  <div class="container shadow-lg bg-light" id="page-content">
+    <div class="row text-center">
+
+      <!--Photo and Links-->
+      <div class="col-sm-4">
+
+        <!--Photo and Description-->
+        <img src="static/photo2.jpg" alt="Photo of me" id="personal_photo">
+        <p>placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder</p>
+        <!--End Photo and Description-->
+
+        <!--List Group Wrapper-->
+        <div class="link-wrapper">
+
+          <div class="list-group list-group-root btn-group">
+
+            <!--About Me-->
+            <button type="button" class="list-group-item bg-light text-danger btn btn-info" id="btn1" data-target="About-Me">About Me</button>
+            <!--End About Me-->
+
+            <!--Projects Collapse Group-->
+            <a href="#Projects" class="list-group-item bg-light text-danger" data-toggle="collapse">Projects</a>
+            <div class="list-group collapse bg-light" id="Projects">
+              <button type="button" class="list-group-item bg-light text-danger btn btn-info" id="btn2" data-target="Project1">Project 1</button>
+              <button type="button" class="list-group-item bg-light text-danger btn btn-info" id="btn3" data-target="Project2">Project 2</button>
+              <button type="button" class="list-group-item bg-light text-danger btn btn-info" id="btn4" data-target="Project3">Project 3</button>
+            </div>
+            <!--End Projects Collapse Group-->
+
+            <!--Contact Link-->
+            <button type="button" class="list-group-item bg-light text-danger btn btn-info" id="btn5" data-target="Contact">Contact</button>
+            <!--End Contact-->
+          </div>
+          <!--End Link Wrapper-->
+          </div>
+      </div>
+      <!--End photo and links-->
+
+      <!--Page information-->
+      <div class="col-sm-8" id="content">
+        <div id="About-Me">
+          <p>About me</p>
+        </div>
+        <div id="Project1">
+          <p>Test2</p>
+        </div>
+        <div id="Project2">
+          Test3
+        </div>
+        <div id="Project3">
+          Test4
+        </div>
+        <div id="Contact">
+          Test5
+        </div>
+      </div>
+      <!--End page information-->
+    </div>
+  </div>
+  <!--End Main Container-->
+
+  <!-- Footer -->
+  <footer class="footer font-small bg-dark fixed-bottom">
+    <div class="footer-copyright text-center py-2 text-danger"> <small>© 2020 Copyright: Mesud Erkam Cengiz</small></div>
+  </footer>
+  <!-- End Footer -->
+</body>
+
+</html>
