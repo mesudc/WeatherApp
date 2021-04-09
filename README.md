@@ -1,2 +1,2 @@
 # WeatherApp
- Cpanel Test
+Weather Application using Flask framework and API to gather data
