@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <title>Portfolio</title>
+  <title>Weather Application</title>
+  
   <!--Required meta tags-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +19,7 @@
   <link rel="stylesheet" type='text/css' href="static/main.css">
   
 </head>
-
+<!--http://openweathermap.org/img/w/{icon}.png-->
 <body>
   <!-- Start Nav bar-->
   <nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -27,63 +28,29 @@
   <!--End Nav Bar-->
 
   <!--Main Container-->
-  <div class="container shadow-lg bg-light" id="page-content">
+  <div class="container shadow-lg bg-light justify-content-center">
     <div class="row text-center">
 
-      <!--Photo and Links-->
-      <div class="col-sm-4">
-
-        <!--Photo and Description-->
-        <img src="static/photo2.jpg" alt="Photo of me" id="personal_photo">
-        <p>placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder</p>
-        <!--End Photo and Description-->
-
-        <!--List Group Wrapper-->
-        <div class="link-wrapper">
-
-          <div class="list-group list-group-root btn-group">
-
-            <!--About Me-->
-            <button type="button" class="list-group-item bg-light text-danger btn btn-info" id="btn1" data-target="About-Me">About Me</button>
-            <!--End About Me-->
-
-            <!--Projects Collapse Group-->
-            <a href="#Projects" class="list-group-item bg-light text-danger" data-toggle="collapse">Projects</a>
-            <div class="list-group collapse bg-light" id="Projects">
-              <button type="button" class="list-group-item bg-light text-danger btn btn-info" id="btn2" data-target="Project1">Project 1</button>
-              <button type="button" class="list-group-item bg-light text-danger btn btn-info" id="btn3" data-target="Project2">Project 2</button>
-              <button type="button" class="list-group-item bg-light text-danger btn btn-info" id="btn4" data-target="Project3">Project 3</button>
-            </div>
-            <!--End Projects Collapse Group-->
-
-            <!--Contact Link-->
-            <button type="button" class="list-group-item bg-light text-danger btn btn-info" id="btn5" data-target="Contact">Contact</button>
-            <!--End Contact-->
+      <div class="col-md-5 col-sm-12 col-xs-12 pt-5 mb-5">
+        <form method="POST" class="card p-3 border-0 shadow-sm">
+          <div class="form-group">
+            <label for="input-city">Enter City</label>
+            <input type="text" name="city" class="form-control" placeholder="Southfield">
           </div>
-          <!--End Link Wrapper-->
+          <div class="form-group">
+            <label for="input-state">Enter State</label>
+            <input type="text" name="state" class="form-control" placeholder="Michigan">
+            <small class="form-text text-muted">State entries only work for US.</small>
           </div>
+          <div class="form-group">
+            <label for="input-country" >Enter Country</label>
+            <input type="text" class="form-control" name="country" placeholder="US">
+          </div>
+          <div class="from-group">
+            <button class="btn btn-danger btn-block">Get Weather</button>
+          </div>
+        </form>
       </div>
-      <!--End photo and links-->
-
-      <!--Page information-->
-      <div class="col-sm-8" id="content">
-        <div id="About-Me">
-          <p>About me</p>
-        </div>
-        <div id="Project1">
-          <p>Test2</p>
-        </div>
-        <div id="Project2">
-          Test3
-        </div>
-        <div id="Project3">
-          Test4
-        </div>
-        <div id="Contact">
-          Test5
-        </div>
-      </div>
-      <!--End page information-->
     </div>
   </div>
   <!--End Main Container-->

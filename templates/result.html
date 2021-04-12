@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <!--Weather display card-->
+    <div class="card mt-5 border-0 col-md-3 offset-md-2 col-sm-12 col-xs-12" style="height: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{city}}, {{country}}</h5>
+            <h6 class="card-subtitle mb-2">Current Temperature: {{temp}}</h6>
+            <p class="card-text">Feels Like: {{feels_like}}</p>
+        </div>
+        <div class="img-container">
+            {{description}}<img src="{{ icon }}" alt="Image depicting weather icon " >
+        </div>
+    </div>
+    <!--End weather display card-->
+{% endblock content %}

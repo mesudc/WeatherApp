@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Weather Application</title>
+  
+  <!--Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--JS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="static/divscript.js"></script>
+
+  <!--CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type='text/css' href="static/main.css">
+  
+</head>
+<body>
+    <!-- Start Nav bar-->
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand text-danger mx-auto" href="/">Mesud Erkam Cengiz</a>
+  </nav>
+  <!--End Nav Bar-->
+
+    <!--Main Container-->
+    <div class="container shadow-lg bg-light justify-content-center">
+        <div class="row text-center">
+            <div class="col-md-5 col-sm-12 col-xs-12 pt-5 mb-5">
+                <form method="POST" class="card border-0 p-3 shadow-sm">
+                  <div class="form-group">
+                    <label for="input-city">Enter City</label>
+                    <input type="text" name="city" class="form-control" placeholder="Southfield">
+                  </div>
+                  <div class="form-group">
+                    <label for="input-state">Enter State</label>
+                    <input type="text" name="state" class="form-control" placeholder="Michigan">
+                    <small class="form-text text-muted">State entries only work for US.</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="input-country" >Enter Country</label>
+                    <input type="text" class="form-control" name="country" placeholder="US">
+                  </div>
+                  <div class="from-group">
+                    <button class="btn btn-danger btn-block">Get Weather</button>
+                  </div>
+                </form>
+              </div>
+    <!-- Block content is filled from html codes from result_us.html and result.html-->          
+    {% block content %}
+    {% endblock content %}
+        </div>
+    </div>
+    <!--End Main Container-->
+  <!-- Footer -->
+  <footer class="footer font-small bg-dark fixed-bottom">
+    <div class="footer-copyright text-center py-2 text-danger"> <small>© 2020 Copyright: Mesud Erkam Cengiz</small></div>
+  </footer>
+  <!-- End Footer -->
+</body>
+
+</html>
